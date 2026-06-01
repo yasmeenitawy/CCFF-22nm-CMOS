@@ -101,13 +101,12 @@ Performance Comparison vs. Reference Designs
 ├── 📁 design/
 │   ├── ccff.jelib              # Electric VLSI library (schematic + layout)
 ├── 📁 simulation/
-│   ├── ccff_prelayout.spi      # Pre-layout SPICE netlist
-│   ├── ccff_postlayout.spi     # Post-layout SPICE netlist (with parasitics)
-│   ├── inverter_sizing.spi     # Inverter gate testbench
-│   └── nor_sizing.spi          # NOR gate testbench
+│   ├── singleEndedFlipFlopSch.raw     
+│   ├── singleEndedFlipFlopSch.spi    # Pre-layout and Post-layout SPICE netlist (with parasitics)
 ├── 📁 docs/
-│   ├── Report.pdf              # Full paper (IEEE TCAS II format)
-│   └── Presentation.pdf        # Project presentation slides
+│   ├── ENCS333_IC_Project.pdf  # Project documentation
+│   ├── Low-Power Single-Ended Conditional Capture Flip.pdf   # Full paper (IEEE TCAS II format)
+│   └── Presentation - Integrated Circuits Project.pdf        # Project presentation slides
 └── 📁 results/
     └── waveforms/              # Simulation screenshots
 ```
@@ -128,18 +127,6 @@ To run pre-layout simulation:
 .include "22nm_LP.txt"
 * Open ccff_prelayout.spi in LTspice and run .tran simulation
 ```
-
----
-
-## Authors
-
-| Name | Student ID |
-|---|---|
-| Yasmeen Itawi | 1221426 |
-| Reema Qashoo | 1221009 |
-
-Department of Electrical and Computer Engineering  
-Birzeit University, Ramallah, Palestine
 
 ---
 
